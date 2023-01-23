@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="css\infoc_css.css">
+    <!-- Boxicons CDN Link -->
+    <link href='D:\E Learning\updated\Info_C++.css' rel='stylesheet'>
+	<link rel="stylesheet" href="C:\Microsoft VS Code\Elearning\dashstyle.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      
+      <span class="logo_name">LEARN&GROW</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#classobj" class="active">
+            <span class="links_name">Classes And Objects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#method">
+            <span class="links_name">Class Methods</span>
+          </a>
+        </li>
+        <li>
+          <a href="#inheritance">
+            <span class="links_name">Inheritance</span>
+          </a>
+        </li>
+        <li>
+          <a href="#encapsulation">
+            <span class="links_name">Encapsulation</span>
+          </a>
+        </li>
+        
+        <li class="log_out">
+          <a href="E-dashboard.php" id="bc">
+          
+            Back
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    
+        <div class="box">
+          <div class="right-side">
+            
+          </div>
+          
+        </div>
+        
+        <div class="box">
+          <div class="right-side">
+            
+          </div>
+          
+        </div>
+      </div>
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">C++ Programming Language</span>
+      </div>
+    </nav>
+
+      <section class="classobj" id="classobj">
+    <div class="Classesobject">
+      <img src="img/main-img.png">
+      <div class="classobj-text">
+        <p>a<br><br>
+          <br>
+          <FONT COLOR="RED"><h2>Classes And Objects</h2></FONT>
+          
+C++ is an object-oriented programming language.<br><br>
+
+Everything in C++ is associated with classes and objects, along with its attributes and methods. For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake.<br><br>
+
+Attributes and methods are basically variables and functions that belongs to the class. These are often referred to as "class members".<br><br>
+
+A class is a user-defined data type that we can use in our program, and it works as an object constructor, or a "blueprint" for creating objects.<br><br>
+-----------------------------------------------------------------------------------------------------------------------------
+<h3>Create a Class</h3><br><br>
+To create a class, use the class keyword:<br><br>
+
+<b>Example</b><br><br>
+Create a class called "MyClass":<br>
+<i>
+class MyClass {       // The class<br>
+  public:             // Access specifier<br>
+    int myNum;        // Attribute (int variable)<br>
+    string myString;  // Attribute (string variable)<br>
+};</i><br><br>
+-----------------------------------------------------------------------------------------------------------------------------
+<h3>Example explained</h3><br>
+*The class keyword is used to create a class called MyClass.<br>
+*The public keyword is an access specifier, which specifies that members (attributes and methods) of the class are accessible from outside the class. You will learn more about access specifiers later.<br>
+*Inside the class, there is an integer variable myNum and a string variable myString. When variables are declared within a class, they are called attributes.<br>
+*At last, end the class definition with a semicolon ;.<br><br>
+-----------------------------------------------------------------------------------------------------------------------------
+<br><br><h3>Create an Object</h3><br><br>
+In C++, an object is created from a class. We have already <b>created the class named MyClass, so now we can use this to create objects.<br><br></b><br>
+<br>
+To create an object of MyClass, specify the class name, followed by the object name.<br><br>
+
+To access the class attributes (myNum and myString), use the dot syntax (.) on the object:<br><br>
+
+<b>Example</b><br>
+Create an object called "myObj" and access the attributes:<br>
+<i>
+class MyClass {       // The class<br>
+  public:             // Access specifier<br>
+    int myNum;        // Attribute (int variable)<br>
+    string myString;  // Attribute (string variable)<br>
+};<br>
+
+int main() {<br>
+  MyClass myObj;  // Create an object of MyClass<br>
+
+  // Access attributes and set values<br>
+  myObj.myNum = 15; <br>
+  myObj.myString = "Some text";<br>
+
+  // Print attribute values<br>
+  cout << myObj.myNum << "\n";<br>
+  cout << myObj.myString;<br>
+  return 0;<br>
+}</i><br><br>
+-----------------------------------------------------------------------------------------------------------------------------
+<h3>Multiple Objects</h3><br><br>
+You can create multiple objects of one class:<br>
+
+<b>Example</b><br><i>
+// Create a Car class with some attributes<br>
+class Car {<br>
+  public:<br>
+    string brand;   <br><br>
+    string model;<br>
+    int year;<br><br>
+};<br><br>
+<br><br>
+int main() {<br>
+  // Create an object of Car<br>
+  Car carObj1;<br>
+  carObj1.brand = "BMW";<br>
+  carObj1.model = "X5";<br>
+  carObj1.year = 1999;<br>
+  // Create another object of Car<br>
+  Car carObj2;<br>
+  carObj2.brand = "Ford";<br>
+  carObj2.model = "Mustang";<br>
+  carObj2.year = 1969;<br>
+
+  // Print attribute values<br>
+  cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n";<br>
+  cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";<br>
+  return 0;<br>
+}</i><br><br>
+-----------------------------------------------------------------------------------------------------------------------------
+        </p>
+        
+      </div>
+    </div>
+
+        <section class="method" id="method">
+    <div class="Methods">
+      <div class="method">
+        <FONT COLOR="RED"><h2><br><br><br>Class Methods</h2></FONT><br>
+          Methods are functions that belongs to the class.<br><br>
+
+There are two ways to define functions that belongs to a class:<br><br>
+
+*Inside class definition<br>
+*Outside class definition<br>
+In the following example, we define a function inside the class, and we name it "myMethod".<br><br>
+
+Note: You access methods just like you access attributes; by creating an object of the class and using the dot syntax (.):<br>
+<br>
+-----------------------------------------------------------------------------------------------------------------------------
+<b>Inside Example</b><br>
+<i>class MyClass {        // The class<br>
+  public:              // Access specifier<br>
+    void myMethod() {  // Method/function defined inside the class<br>
+      cout << "Hello World!";<br>
+    }<br>
+};<br>
+<br>
+int main() {<br>
+  MyClass myObj;     // Create an object of MyClass<br>
+  myObj.myMethod();  // Call the method<br>
+  return 0;<br>
+}<br></i><br>
+To define a function outside the class definition, you have to declare it inside the class and then define it outside of the class. This is done by specifiying the name of the class, followed the scope resolution :: operator, followed by the name of the function:<br><br>
+-----------------------------------------------------------------------------------------------------------------------------
+<b>Outside Example</b><br><br>
+<i>class MyClass {        // The class<br>
+  public:              // Access specifier<br>
+    void myMethod();   // Method/function declaration<br>
+};<br>
+<br>
+// Method/function definition outside the class<br>
+void MyClass::myMethod() {<br>
+  cout << "Hello World!";<br>
+}<br>
+<br>
+int main() {<br>
+  MyClass myObj;     // Create an object of MyClass<br>
+  myObj.myMethod();  // Call the method<br>
+  return 0;<br>
+}<br></i><br>
+
+-----------------------------------------------------------------------------------------------------------------------------
+<h3>Parameters</h3><br><br>
+You can also add parameters:<br>
+<br>
+ <b>Example</b><br>
+#include < iostream><br>
+using namespace std;<br>
+<br>
+class Car {<br>
+  public:<br>
+    int speed(int maxSpeed);<br>
+};<br>
+<br>
+int Car::speed(int maxSpeed) {<br>
+  return maxSpeed;<br>
+}<br>
+<br>
+int main() {<br>
+  Car myObj; // Create an object of Car<br>
+  cout << myObj.speed(200); // Call the method with an argument<br>
+  return 0;<br>
+}<br>
+</i>
+-----------------------------------------------------------------------------------------------------------------------------
+          </p>
+      </div>
+    </div>
+        <section class="inheritance" id="inheritance">
+    <div class="Inheritance">
+      <div class="inheritance">
+        <FONT COLOR="RED"><h2><br><br><br>Inheritance</h2></FONT><br>
+         <p>
+           In C++, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:<br><br>
+
+*derived class (child) - the class that inherits from another class<br>
+*base class (parent) - the class being inherited from<br>
+To inherit from a class, use the : symbol.<br><br>
+
+In the example below, the Car class (child) inherits the attributes and methods from the Vehicle class (parent):<br>
+
+<b>Example</b><br><br>
+<i>// Base class<br>
+class Vehicle {<br>
+  public:<br>
+    string brand = "Ford";<br>
+    void honk() {<br>
+      cout << "Tuut, tuut! \n" ;<br>
+    }<br>
+};<br></i>
+<br>
+// Derived class<br>
+class Car: public Vehicle {<br>
+  public:<br>
+    string model = "Mustang";<br>
+};<br>
+<br>
+int main() {<br>
+  Car myCar;<br>
+  myCar.honk();<br>
+  cout << myCar.brand + " " + myCar.model;<br>
+  return 0;<br>
+}<br>
+         </p>
+         </div>
+       </div>
+-----------------------------------------------------------------------------------------------------------------------------
+
+  </section>
+    <section class="encapsulation" id="encapsulation">
+    <div class="Encapsulation">
+      <div class="encapsulation">
+        <FONT COLOR="RED"><h2><br><br><br>Encapsulation</h2></FONT><br>
+         <p>
+           Operators are used to perform operations on variables and values.<br>
+
+In the example below, we use the + operator to add together two values:<br>
+<br>
+Example<br>
+int myNum = 100 + 50;<br>
+Although the + operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and another variable:<br>
+<br>
+Example<br>
+int sum1 = 100 + 50;        // 150 (100 + 50)<br>
+int sum2 = sum1 + 250;      // 400 (150 + 250)<br>
+int sum3 = sum2 + sum2;     // 800 (400 + 400)<br>
+C divides the operators into the following groups:<br>
+<br>
+Arithmetic operators<br>
+Assignment operators<br>
+Comparison operators<br>
+Logical operators<br>
+Bitwise operators<br><br>
+Arithmetic Operators<br>
+Arithmetic operators are used to perform common mathematical operations.<br>
+<br>
+Operator  Name  Description Example Try it<br>
++ Addition  Adds together two values  x + y <br>
+- Subtraction Subtracts one value from another  x - y <br>
+* Multiplication  Multiplies two values x * y <br>
+/ Division  Divides one value by another  x / y <br>
+% Modulus Returns the division remainder  x % y <br>
+++  Increment Increases the value of a variable by 1  ++x <br>
+--  Decrement Decreases the value of a variable by 1  --x <br>
+<br>
+-----------------------------------------------------------------------------------------------------------------------------
+          <center>
+            <a href="test_C++.html">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Start Test</span>
+          </a></center>
+           
+         </p>
+         </div>
+       </div>
+  </section>
+
+
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
+

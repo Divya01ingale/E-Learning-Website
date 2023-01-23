@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="css\Info_java.css">
+    <!-- Boxicons CDN Link -->
+    <link href='D:\E Learning\updated\Info_java.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      
+      <span class="logo_name">Java</span>
+    </div>
+      <ul class="nav-links">
+        <li><a href="#packages">Java Packages/API</a></li>
+        <li><a href="#abstract">Java Abstraction</a></li>
+        <li><a href="#interface">Java Interface</a></li>
+        <li><a href="#threads">Java Threads</a></li>
+        
+            
+        
+        <li class="log_out">
+          <a href="E-dashboard.php" id="bc">
+          Back
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Java Programming</span>
+      </div>
+      
+     
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title" id="packages"><br><br>
+            
+          </div>
+          
+          <div class="info" id="heading">
+            <h2><FONT COLOR="RED">Java Packages</FONT></h2>
+            <p>A package in Java is used to group related classes. Think of it as a folder in a file directory. We use packages to avoid name conflicts, and to write a better maintainable code. Packages are divided into two categories:<br>
+
+            * Built-in Packages (packages from the Java API)<br>
+            * User-defined Packages (create your own packages)</p>
+            <p>------------------------------------------------------------------------------------------------------------------------</p>
+            <h2><u>Built-in Packages</u></h2>
+            <br>
+            <p>The Java API is a library of prewritten classes, that are free to use, included in the Java Development Environment.<br>
+
+The library contains components for managing input, database programming, and much much more. The complete list can be found at Oracles website: https://docs.oracle.com/javase/8/docs/api/.<br>
+
+The library is divided into packages and classes. Meaning you can either import a single class (along with its methods and attributes), or a whole package that contain all the classes that belong to the specified package.<br>
+
+To use a class or a package from the library, you need to use the import keyword:<br></p><br>
+<h3>Syntax</h3><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import package.name.Class;   // Import a single class<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import package.name.*;   // Import the whole package</p><br>
+        <h2><u>Import a Class</u></h2>
+        <p>If you find a class you want to use, for example, the Scanner class, which is used to get user input, write the following code:</p><br>
+        <h3>Example</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import java.util.Scanner;</p>
+        <br>
+        <p>In the example above, java.util is a package, while Scanner is a class of the java.util package.<br>
+
+To use the Scanner class, create an object of the class and use any of the available methods found in the Scanner class documentation. In our example, we will use the nextLine() method, which is used to read a complete line:</p>
+        <br>
+        <h3>Example</h3>
+        <p>Using the Scanner class to get user input:</p>
+        <br>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;import java.util.Scanner;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;class MyClass {<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scanner myObj = new Scanner(System.in);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter username");<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String userName = myObj.nextLine();<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Username is: " + userName);<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        <h3> Output</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter username<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learn&grow<br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Username is: learn&grow</p>
+        </p>
+        <p>-----------------------------------------------------------------------------------------------------------------</p><br>
+        <h2><u>Import a Package</u></h2>
+        <p>There are many packages to choose from. In the previous example, we used the Scanner class from the java.util package. This package also contains date and time facilities, random-number generator and other utility classes.<br>
+
+        To import a whole package, end the sentence with an asterisk sign (*). The following example will import ALL the classes in the java.util package:<br>
+      
+        <h3>Example</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import java.util.*;</p>
+        <br>
+        <p>-----------------------------------------------------------------------------------------------------------------</p><br>
+        <h2><u>User-defined Packages</u></h2>
+        <p>To create your own package, you need to understand that Java uses a file system directory to store them. Just like folders on your computer:<br>
+          To create a package, use the package keyword:
+        </p>
+        <br>
+        <h3>Example</h3>
+        <br>
+        <h3>MyPackageClass.java</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;package mypack;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class MyPackageClass {<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("This is my package!");<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br></p>
+
+
+          </div>
+
+<p>----------------------------------------------------------------------------------------------------------------------------</p>
+
+<div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title" id="abstract"><br><br>
+            
+          </div>
+          
+            
+          <div class="info" id="heading">
+            <h2><FONT COLOR="RED">Java Abstraction</FONT></h2><br>
+            <p>Data abstraction is the process of hiding certain details and showing only essential information to the user.<br>
+Abstraction can be achieved with either abstract classes or interfaces (which you will learn more about in the next chapter).<br>
+
+The abstract keyword is a non-access modifier, used for classes and methods:<br>
+
+<b>Abstract class:</b> is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).<br><br>
+
+<b>Abstract method:</b> can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).<br><br>
+An abstract class can have both abstract and regular methods:<br></p>
+<br>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;abstract class Animal {<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public abstract void animalSound();<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void sleep() {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Zzz");<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<p>From the example above, it is not possible to create an object of the Animal class:</p>
+<br>
+<p>Animal myObj = new Animal(); // will generate an error</p><br>
+<h3>Why And When To Use Abstract Classes and Methods?</h3><br>
+<p>To achieve security - hide certain details and only show the important details of an object.<br>
+
+<b>Note:</b> Abstraction can also be achieved with Interfaces, which you will learn more about in the next chapter.<br>
+ <p>----------------------------------------------------------------------------------------------------------------------------</p>
+
+<div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title" id="interface"><br><br>
+            
+          </div>
+         
+            
+          <div class="info" id="heading">
+            <h2><FONT COLOR="RED">Java Interfaces</font></h2><br>
+            <p>Another way to achieve abstraction in Java, is with interfaces.<br>
+
+            An interface is a completely "abstract class" that is used to group related methods with empty bodies:</p><br>
+            <h3>Example</h3><br>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// interface<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interface Animal {<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void animalSound(); // interface method (does not have a body)<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void run(); // interface method (does not have a body)<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p><br>
+               <p>To access the interface methods, the interface must be "implemented" (kinda like inherited) by another class with the implements keyword (instead of extends). The body of the interface method is provided by the "implement" class:</p><br>
+               <p><b>Notes on Interfaces:</b><br>
+                *Like abstract classes, interfaces cannot be used to create objects (in the example above, it is not possible to create an "Animal" object in the MyMainClass)<br>
+                *Interface methods do not have a body - the body is provided by the "implement" class<br>
+                *On implementation of an interface, you must override all of its methods<br>
+                *Interface methods are by default abstract and public<br>
+                *Interface attributes are by default public, static and final<br>
+                *An interface cannot contain a constructor (as it cannot be used to create objects)<br></p><br>
+                <b>Why And When To Use Interfaces?</b>
+                <p>1) To achieve security - hide certain details and only show the important details of an object (interface).<br>
+
+2) Java does not support "multiple inheritance" (a class can only inherit from one superclass). However, it can be achieved with interfaces, because the class can implement multiple interfaces. Note: To implement multiple interfaces, separate them with a comma (see example below).</p>
+<br>
+<p>---------------------------------------------------------------------------------------------------------------------------</p>
+
+
+<div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title" id="threads"><br><br>
+            
+          </div>
+          
+            
+          <div class="info" id="threads">
+            <h2><FONT COLOR="RED">Java Threads</Font></p></h2><br>
+            <p>Threads allows a program to operate more efficiently by doing multiple things at the same time.<br>
+
+            Threads can be used to perform complicated tasks in the background without interrupting the main program.</p><br>
+            <p>-----------------------------------------------------------------------------------------------------------------------</p>
+            <h2><u>Creating a Thread</u></h2>
+            <p>There are two ways to create a thread.<br>
+
+             It can be created by extending the Thread class and overriding its run() method:</p><br><br>
+             <h3>Extend Syntax</h3>
+             <p>&nbsp;&nbsp;&nbsp;&nbsp;public class Main extends Thread {<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void run() {<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("This code is running in a thread");<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+             &nbsp;&nbsp;&nbsp;&nbsp;}</p><br>
+             <p>-----------------------------------------------------------------------------------------------------------------------</p>
+             <p>Another way to create a thread is to implement the Runnable interface:</p>
+             <br>
+             <h3>Implement Syntax</h3><br>
+             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public class Main implements Runnable {<br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void run() {<br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("This code is running in a thread");<br>
+             
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p><br>
+            <p>-------------------------------------------------------------------------------------------------------------------------</p>
+            <h3>Differences between "extending" and "implementing" Threads</h3>
+            <p>The major difference is that when a class extends the Thread class, you cannot extend any other class, but by implementing the Runnable interface, it is possible to extend from another class as well, like: class MyClass extends OtherClass implements Runnable.</p>
+
+
+
+              <center>
+            <a href="test_C++.html">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Start Test</span>
+          </a></center>
+
+   <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>

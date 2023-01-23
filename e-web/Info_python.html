@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="css\Info_java.css">
+    <!-- Boxicons CDN Link -->
+    <link href='D:\E Learning\updated\Info_python.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      
+      <span class="logo_name">Python</span>
+    </div>
+      <ul class="nav-links">
+        <li><a href="#lists">Python List</a></li>
+        <li><a href="#tuples">Python Tuples</a></li>
+        <li><a href="#sets">Python Sets</a></li>
+        <li><a href="#format">Python Formatting</a></li>
+        
+            
+        
+        <li class="log_out">
+          <a href="E-dashboard.php" id="bc">
+            Back<
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">PYTHON PROGRAMMING LANGUAGE</span>
+      </div>
+      
+     
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title" id="lists"><br><br>
+  
+          </div>
+          
+          <div class="info" id="lists">
+            <h2><FONT COLOR="RED">Python List</font></h2>
+            <br>
+            <p>Lists are used to store multiple items in a single variable.
+
+Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.<br>
+Lists are created using square brackets:</p><br><br>
+            <h3>Example :</h3><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; thislist = ["apple", "banana", "cherry"]
+print(thislist)</p>
+<p>--------------------------------------------------------------------------------------------------------------------------------------------</p>
+          <h2><u> List Items </u></h2><br>
+             <p>List items are ordered, changeable, and allow duplicate values.
+
+List items are indexed, the first item has index [0], the second item has index [1] etc.</p><br>
+             <h2><u>Ordered</u></h2><br>
+             <p>When we say that lists are ordered, it means that the items have a defined order, and that order will not change.
+
+If you add new items to a list, the new items will be placed at the end of the list.</p>
+<p>--------------------------------------------------------------------------------------------------------------------------------------------</p>
+            <h2><u> Changeable </u></h2></br>
+            <p> The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.</p><br>
+            <h2><u>Allow Duplicates</u></h2>
+            <br>
+            <p>since lists are indexed, lists can have items with the same value:</p></br>
+            <h3>Example </h3><br>
+            <p> Lists allow duplicate values :</p><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+print(thislist)</p>
+<p>--------------------------------------------------------------------------------------------------------------------------------------------</p>
+            <h2><u>Access Items</u></h2><br>
+            <p>List items are indexed and you can access them by referring to the index number:</p><br><br>
+            <h3>Example</h3>
+            <p>Print the second item of the list:</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thislist = ["apple", "banana", "cherry"]
+print(thislist[1])</p>
+<p>--------------------------------------------------------------------------------------------------------------------------------------------</p>
+            <h2><u>Negative Indexing</u></h2><br>
+            <p>Negative indexing means start from the end
+-1 refers to the last item, -2 refers to the second last item etc.</p><br>
+            <h3>Example</h3><br>
+            <p>Print the last item of the list:</p>
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])</p><br>
+<p>-------------------------------------------------------------------------------------------------------------------------------------------------</p>
+            <h2><u>Range of Indexes</u></h2>
+            <br>
+            <p>You can specify a range of indexes by specifying where to start and where to end the range.
+
+When specifying a range, the return value will be a new list with the specified items.</p><br>
+            <h3> Example </h3>
+            <p>Return the third, fourth, and fifth item:</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])</p><br>
+<p>--------------------------------------------------------------------------------------------------------------------------------------------</p>
+            <h2><u>Change a Range of Item Values</u></h2>
+            <br>
+            <p>To change the value of items within a specific    range, define a list with the new values, and refer to the range of index numbers where you want to insert the new values:</p><br>
+            <h3> Example </h3>
+            <p>Change the values "banana" and "cherry" with the values "blackcurrant" and "watermelon":</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+thislist[1:3] = ["blackcurrant", "watermelon"]
+print(thislist)</p><br>
+<p>--------------------------------------------------------------------------------------------------------------------------------------------</p>
+           <br>
+         </div>
+       </div>
+
+
+
+           <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title" id="tuples">
+    
+          </div>
+          
+          <div class="info" id="tuples"><br><br><br>
+          <h2><FONT COLOR="RED">Python Tuple</font></h2><br>
+            <p>Tuples are used to store multiple items in a single variable.<br>
+
+Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.<br>
+
+A tuple is a collection which is ordered and unchangeable.<br>
+
+Tuples are written with round brackets.</p><br>
+            <h3>Example</h3>
+            <p>Create a Tuple:</p>
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thistuple = ("apple", "banana", "cherry")
+print(thistuple)</p><br><br>
+<p>--------------------------------------------------------------------------------------------------------------------------------------------</p>
+            <h2><u>Tuple Length</u></h2><br>
+            <p>To determine how many items a tuple has, use the len() function:</p><br>
+            <h3>Example</h3>
+            <p>Print the number of items in the tuple:</p><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thistuple = ("apple", "banana", "cherry")
+print(len(thistuple))</p>
+<p>--------------------------------------------------------------------------------------------------------------------------------------------</p>
+            <h2><u>Create Tuple With One Item</u></h2><br>
+            <p>To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.</p><br>
+            <h3>Example</h3><br>
+            <p>One item tuple, remember the comma:</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thistuple = ("apple",)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(type(thistuple))<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#NOT a tuple<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thistuple = ("apple")<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print(type(thistuple))<br>
+            </p><br><br>
+            <p>--------------------------------------------------------------------------------------------------------------------------------------------</p>
+            <h2><u>Access Tuple Items</u></h2><br>
+            <p>You can access tuple items by referring to the index number, inside square brackets:</p><br>
+            <h3>Example</h3>
+            <p>Print the second item in the tuple:</p><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thistuple = ("apple", "banana", "cherry")<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(thistuple[1])<br></p>
+            <p>--------------------------------------------------------------------------------------------------------------------------------------------</p> 
+            <h2><u>Negative Indexing</u></h2><br>
+            <p>Negative indexing means start from the end.<br>
+
+            -1 refers to the last item, -2 refers to the second last item etc.</p>
+            <h3>Example</h3><br>
+            <p>Print the last item of the tuple:</p><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thistuple = ("apple", "banana", "cherry")<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(thistuple[-1])</p>
+            <p>--------------------------------------------------------------------------------------------------------------------------------------------</p>
+            <br><br>
+            </p>
+         </div>
+       </div>
+
+
+
+
+ <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title" id="sets">
+    
+          </div>
+          
+          <div class="info" id="sets"><br><br><br>
+            <h2><FONT COLOR="RED">Python Sets</font></h2><br>
+
+            
+            
+            <p>Sets are used to store multiple items in a single variable.<br>
+
+Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage.<br>
+
+A set is a collection which is unordered, unchangeable*, and unindexed.<br>
+Sets are written with curly brackets.<br><br></p>
+           <h3>Example</h3><br>
+            <p>Create a Set:</p><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thisset = {"apple", "banana", "cherry"}<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(thisset)</p><br>
+            <p>-----------------------------------------------------------------------------------------------------------------</p>
+            <h2><u>Access Items</u></h2><br>
+            <p>You cannot access items in a set by referring to an index or a key.<br>
+             <p> But you can loop through the set items using a for loop, or ask if a specified value is present in a set, by using the in keyword.</p><br>
+            <h3>Example</h3><br>
+            <p>Loop through the set, and print the values:</p><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thisset = {"apple", "banana", "cherry"}<br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for x in thisset:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(x)<br>
+
+<p>-----------------------------------------------------------------------------------------------------------------------------</p>
+        <h2><u>Add Items</u></h2><br>
+        <p>Once a set is created, you cannot change its items, but you can add new items.<br>
+
+        To add one item to a set use the add() method.</p><br>
+
+        <h3>Example</h3>
+        <p>Add an item to a set, using the add() method:</p><br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thisset = {"apple", "banana", "cherry"}<br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thisset.add("orange")<br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(thisset)</p><br><br>
+        <p>----------------------------------------------------------------------------------------------------------------------</p> 
+        <h2><u>Add Any Iterable</h2></u><br>
+        <p>The object in the update() method does not have to be a set, it can be any iterable object (tuples, lists, dictionaries etc.).</p><br>
+        <h3>Example</h3>
+        <p>Add elements of a list to at set:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thisset = {"apple", "banana", "cherry"}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mylist = ["kiwi", "orange"]<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thisset.update(mylist)<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(thisset)</p><br>
+        <p>------------------------------------------------------------------------------------------------------------------------</p> 
+        <h2><u>Remove Items </u></h2><br>
+        <p>To remove an item in a set, use the remove(), or the discard() method.</p><br>
+        <h3>Example</h3>
+        <p>Remove "banana" by using the remove() method:</p><br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thisset = {"apple", "banana", "cherry"}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thisset.remove("banana")<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(thisset)<br></p>
+        <p>-------------------------------------------------------------------------------------------------------------------------</p>
+        <h2><u>Python - Loop Sets</h2></u><br>
+        <p>You can loop through the set items by using a for loop:</p><br>
+        <h3>Example</h3>
+        <p>Loop through the set, and print the values:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thisset = {"apple", "banana", "cherry"}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for x in thisset:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(x)</p><br>
+        <p>--------------------------------------------------------------------------------------------------------------------------</p>
+        <h2><u>Join Two Sets</u></h2><br>
+        <p>There are several ways to join two or more sets in Python.<br>
+        You can use the union() method that returns a new set containing all items from both sets, or the update() method that inserts all the items from one set into another:</p><br>
+        <p><b>Example</p></b>
+        <p>The union() method returns a new set with all items from both sets:</p><br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set1 = {"a", "b" , "c"}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set2 = {1, 2, 3}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set3 = set1.union(set2)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(set3)</p><br>
+        <p>-------------------------------------------------------------------------------------------------------------------</p><br></div>
+
+        <div class="info" id="format">
+        <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title" id="Format">
+            <br><br>
+           
+          </div>
+          
+            
+          
+            <h2><FONT COLOR="RED">String Formatting</font></h2><br>
+
+            <p>To make sure a string will display as expected, we can format the result with the format() method.</p><br>
+            <h2><u>String format()</u></h2><br>
+            <p>The format() method allows you to format selected parts of a string.<br>
+
+            Sometimes there are parts of a text that you do not control, maybe they come from a database, or user input?<br>
+
+            To control such values, add placeholders (curly brackets {}) in the text, and run the values through the format() method:</p><br>
+            <h3>Example</h3>
+            <p>Add a placeholder where you want to display the price:</p><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;price = 49<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txt = "The price is {} dollars"<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(txt.format(price))<br>
+            </p>
+            <p>-----------------------------------------------------------------------------------------------------------------</p><br>
+            <p>You can add parameters inside the curly brackets to specify how to convert the value:</p><br>
+            <h3>Example</h3>
+            <p>Format the price to be displayed as a number with two decimals:</p><br>
+            <p>txt = "The price is {:.2f} dollars"</p>
+            <p>------------------------------------------------------------------------------------------------------------------</p><br>
+            <h2><u>Multiple Values</u></h2><br>
+            <p>If you want to use more values, just add more values to the format() method:</p><br>
+            <p>print(txt.format(price, itemno, count))</p>
+            <p>And add more placeholders:</p><br>
+            <h3>Example</h3>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity = 3<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;itemno = 567<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;price = 49<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myorder = "I want {} pieces of item number {} for {:.2f} dollars."<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(myorder.format(quantity, itemno, price))
+            </p>
+
+            <center>
+            <a href="test_python.html">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Start Test</span>
+          </a></center>
+
+
+
+          </div> 
+
+          
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>

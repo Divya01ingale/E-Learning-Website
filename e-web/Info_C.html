@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="css\infoc_css.css">
+    <!-- Boxicons CDN Link -->
+    <link href='D:\E Learning\updated\Info_C.css' rel='stylesheet'>
+	<link rel="stylesheet" href="C:\Microsoft VS Code\Elearning\dashstyle.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      
+      <span class="logo_name">LEARN&GROW</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#varb" class="active">
+            <span class="links_name">C Variables</span>
+          </a>
+        </li>
+        <li>
+          <a href="#datat">
+            
+            <span class="links_name">C Data Types</span>
+          </a>
+        </li>
+        <li>
+          <a href="#const">
+            <span class="links_name">C Constants</span>
+          </a>
+        </li>
+        <li>
+          <a href="#operat">
+            <span class="links_name">C Operators</span>
+          </a>
+        </li>
+        
+        
+        <li class="log_out">
+          <a href="E-dashboard.php" id="bc">
+            Back
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    
+        <div class="box">
+          <div class="right-side">
+            
+          </div>
+          
+        </div>
+        
+        <div class="box">
+          <div class="right-side">
+            
+          </div>
+          
+        </div>
+      </div>
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">C Programming Language</span>
+      </div>
+    </nav>
+
+      <section class="varb" id="varb">
+    <div class="Variable">
+      <img src="img/main-img.png">
+      <div class="Varb-text">
+        <p>a<br><br>
+          <br>
+          <FONT COLOR="RED"><h2>Variables</h2></FONT>
+          Variables are containers for storing data values.<br><br>
+
+In C, there are different types of variables (defined with different keywords), for example:<br>
+
+<FONT COLOR="CD5C5C"> int </FONT>- stores integers (whole numbers), without decimals, such as 123 or -123<br>
+<FONT COLOR="CD5C5C">float</FONT> - stores floating point numbers, with decimals, such as 19.99 or -19.99<br>
+<FONT COLOR="CD5C5C">char</FONT> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes<br><br>
+-----------------------------------------------------------------------------------------------------------------------------
+<h2>Declaring (Creating) Variables</h2><br><br>
+To create a variable, specify the type and assign it a value:<br><br>
+
+<b>Syntax</b><br>
+<i> type variableName = value;</i><br><br>
+Where type is one of C types (such as int), and variableName is the name of the variable (such as x or myName). The equal sign is used to assign a value to the variable.<br>
+
+So, to create a variable that should store a number, look at the following example:<br><br>
+
+<h3>Example</h3>
+Create a variable called myNum of type int and assign the value 15 to it:<br>
+
+<i>int myNum = 15;</i><br><br>
+You can also declare a variable without assigning the value, and assign the value later:<br>
+<br>
+Example<br>
+int myNum;<br>
+myNum = 15;<br>
+Note: If you assign a new value to an existing variable, it will overwrite the previous value:<br>
+<br>
+Example<br>
+int myNum = 15;  // myNum is 15<br>
+myNum = 10;  // Now myNum is 10<br><br>
+-----------------------------------------------------------------------------------------------------------------------------
+<h3>Output Variables</h3><br>
+You learned from the output chapter that you can output values/print text with the printf() function:<br>
+
+Example<br>
+printf("Hello World!");<br><br>
+In many other programming languages (like Python, Java, and C++), you would normally use a print function to display the value of a variable. However, this is not possible in C:<br>
+
+Example<br>
+int myNum = 15;<br>
+
+printf(myNum);  // Nothing happens<br>
+To output variables in C, you must get familiar with something called "format specifiers".<br>
+-----------------------------------------------------------------------------------------------------------------------------
+<h3>Format Specifiers</h3><br>
+Format specifiers are used together with the printf() function to tell the compiler what type of data the variable is storing. It is basically a placeholder for the variable value.<br>
+
+A format specifier starts with a percentage sign %, followed by a character.<br>
+
+For example, to output the value of an int variable, you must use the format specifier %d or %i surrounded by double quotes, inside the printf() function:<br>
+
+
+Example<br>
+int myNum = 15;<br>
+printf("%d", myNum);  // Outputs 15<br>
+To print other types, use %c for char and %f for float:<br>
+
+Example<br>
+// Create variables<br>
+int myNum = 5;            // Integer (whole number)<br>
+float myFloatNum = 5.99;   // Floating point number<br>
+char myLetter = 'D';       // Character<br>
+
+// Print variables<br>
+printf("%d\n", myNum);<br>
+printf("%f\n", myFloatNum);<br>
+printf("%c\n", myLetter);<br>
+To combine both text and a variable, separate them with a comma inside the printf() function:<br>
+
+Example<br>
+int myNum = 5;<br>
+printf("My favorite number is: %d", myNum);<br>
+To print different types in a single printf() function, you can use the following:<br>
+
+Example<br>
+int myNum = 5;<br>
+char myLetter = 'D';<br>
+printf("My number is %d and my letter is %c", myNum, myLetter);<br>
+You will learn more about Data Types in the next chapter.<br>
+<br>
+<h3>Add Variables Together</h3><br>
+To add a variable to another variable, you can use the + operator:<br>
+
+Example<br>
+int x = 5;<br>
+int y = 6;<br>
+int sum = x + y;<br>
+printf("%d", sum);<br>
+<h3>Declare Multiple Variables</h3><br>
+To declare more than one variable of the same type, use a comma-separated list:<br>
+
+Example<br>
+int x = 5, y = 6, z = 50;<br>
+printf("%d", x + y + z);<br>
+You can also assign the same value to multiple variables of the same type:<br>
+
+Example<br>
+<br>
+int x, y, z;<br>
+x = y = z = 50;<br>
+printf("%d", x + y + z);<br>
+-----------------------------------------------------------------------------------------------------------------------------
+<h3>C Variable Names</h3><br>
+All C variables must be identified with unique names.<br>
+<br>
+These unique names are called identifiers.<br>
+<br>
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).<br>
+<br>
+Note: It is recommended to use descriptive names in order to create understandable and maintainable <br>code:
+<br>
+Example<br>
+// Good<br>
+int minutesPerHour = 60;<br>
+<br>
+// OK, but not so easy to understand what m actually is<br>
+int m = 60;<br>
+The general rules for naming variables are:<br>
+<br>
+Names can contain letters, digits and underscores<br>
+Names must begin with a letter or an underscore (_)<br>
+Names are case sensitive (myVar and myvar are different variables)<br>
+Names cannot contain whitespaces or special characters like !, #, %, etc.<br>
+Reserved words (such as int) cannot be used as names<br>
+<br>
+-----------------------------------------------------------------------------------------------------------------------------
+        </p>
+        
+      </div>
+    </div>
+
+        <section class="datat" id="datat">
+    <div class="Datatype">
+      <div class="datat">
+        <FONT COLOR="RED"><h2><br><br><br>Data Types</h2></FONT><br>
+          <p>As explained in the Variables chapter, a variable in C must be a specified data type, and you must use a format specifier inside the printf() function to display it:<br>
+
+Example<br>
+// Create variables<br>
+int myNum = 5;             // Integer (whole number)<br>
+float myFloatNum = 5.99;   // Floating point number<br>
+char myLetter = 'D';       // Character<br>
+<br>
+// Print variables<br>
+printf("%d\n", myNum);<br>
+printf("%f\n", myFloatNum);<br>
+printf("%c\n", myLetter);<br>
+Basic Data Types<br>
+The data type specifies the size and type of information the variable will store.<br>
+<br>
+In this tutorial, we will focus on the most basic ones:<br>
+<br>
+Data Type Size  Description<br>
+int 2 or 4 bytes  Stores whole numbers, without decimals<br>
+float 4 bytes Stores fractional numbers, containing one or m<br>ore decimals. Sufficient for storing 7 decimal digits<br>
+double  8 bytes Stores fractional numbers, containing one or more decimals. <br>Sufficient for storing 15 decimal digits<br>
+char  1 byte  Stores a single character/letter/number, or ASCII values<br>
+Basic Format Specifiers<br>
+There are different format specifiers for each data type. Here are some of them:<br>
+<br>
+Format Specifier  Data Type Try it<br>
+%d or %i  int <br>
+%f  float <br>
+%lf double  <br>
+%c  char  <br>
+%s  Used for strings, which you will learn more about in a later chapter  <br>
+-----------------------------------------------------------------------------------------------------------------------------
+          </p>
+      </div>
+    </div>
+        <section class="const" id="const">
+    <div class="Constant">
+      <div class="const">
+        <FONT COLOR="RED"><h2><br><br><br>Constants</h2></FONT><br>
+         <p>
+           When you don't want others (or yourself) to override existing variable values, use the const keyword (this will declare the variable as "constant", which means unchangeable and read-only):<br>
+<br>
+Example<br>
+const int myNum = 15;  // myNum will always be 15<br>
+myNum = 10;  // error: assignment of read-only variable 'myNum'<br>
+You should always declare the variable as constant when you have values that are unlikely to change:<br>
+<br>
+Example<br>
+const int minutesPerHour = 60;<br>
+const float PI = 3.14;<br>
+Notes On Constants<br>
+When you declare a constant variable, it must be assigned with a value:<br>
+<br>
+Example<br>
+Like this:<br>
+<br>
+const int minutesPerHour = 60;<br>
+This however, will not work:<br>
+<br>
+const int minutesPerHour;<br>
+minutesPerHour = 60; // error<br>
+Good Practice<br>
+Another thing about constant variables, is that it is considered good practice to <br>declare them with uppercase. It is not required, but useful for code readability and common for C programmers:<br>
+<br>
+Example<br>
+const int BIRTHYEAR = 1980;<br>
+<br>
+-----------------------------------------------------------------------------------------------------------------------------
+         </p>
+         </div>
+       </div>
+  </section>
+    <section class="operat" id="operat">
+    <div class="Operator">
+      <div class="operat">
+        <FONT COLOR="RED"><h2><br><br><br>Operators</h2></FONT><br>
+         <p>
+           Operators are used to perform operations on variables and values.<br>
+
+In the example below, we use the + operator to add together two values:<br>
+<br>
+Example<br>
+int myNum = 100 + 50;<br>
+Although the + operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and another variable:<br>
+<br>
+Example<br>
+int sum1 = 100 + 50;        // 150 (100 + 50)<br>
+int sum2 = sum1 + 250;      // 400 (150 + 250)<br>
+int sum3 = sum2 + sum2;     // 800 (400 + 400)<br>
+C divides the operators into the following groups:<br>
+<br>
+Arithmetic operators<br>
+Assignment operators<br>
+Comparison operators<br>
+Logical operators<br>
+Bitwise operators<br><br>
+Arithmetic Operators<br>
+Arithmetic operators are used to perform common mathematical operations.<br>
+<br>
+Operator  Name  Description Example Try it<br>
++ Addition  Adds together two values  x + y <br>
+- Subtraction Subtracts one value from another  x - y <br>
+* Multiplication  Multiplies two values x * y <br>
+/ Division  Divides one value by another  x / y <br>
+% Modulus Returns the division remainder  x % y <br>
+++  Increment Increases the value of a variable by 1  ++x <br>
+--  Decrement Decreases the value of a variable by 1  --x <br>
+<br>
+-----------------------------------------------------------------------------------------------------------------------------
+           
+         </p>
+         </div>
+       </div>
+  </section>
+            <center>
+            <a href="test_C.html">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Start Test</span>
+          </a></center>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
+
